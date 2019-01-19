@@ -38,13 +38,13 @@ main(int argc, char **argv)
     signal(SIGALRM, print_stats);
     ualarm(1000000, 1000000);
 
-
     if ((rc = nng_sub0_open(&sock)) != 0) {
         panic();
     }
 
     nng_dialer dialer;
     if ((rc = nng_dialer_create(&dialer, sock, "tcp://localhost:3999")) != 0) {
+    // if ((rc = nng_dialer_create(&dialer, sock, "ipc://xxx.ipc")) != 0) {
         panic();
     }
 
