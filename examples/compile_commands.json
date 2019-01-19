@@ -1,0 +1,50 @@
+[
+    {
+        "arguments": [
+            "cc", 
+            "-c", 
+            "-I../include", 
+            "-o", 
+            "pair", 
+            "pair.c"
+        ], 
+        "directory": "/Users/moshohayeb/Documents/code/nng/examples", 
+        "file": "pair.c"
+    }, 
+    {
+        "arguments": [
+            "cc", 
+            "-c", 
+            "-I../include", 
+            "-o", 
+            "consumer", 
+            "consumer.c"
+        ], 
+        "directory": "/Users/moshohayeb/Documents/code/nng/examples", 
+        "file": "consumer.c"
+    }, 
+    {
+        "arguments": [
+            "cc", 
+            "-c", 
+            "-I../include", 
+            "-o", 
+            "bus", 
+            "bus.c"
+        ], 
+        "directory": "/Users/moshohayeb/Documents/code/nng/examples", 
+        "file": "bus.c"
+    }, 
+    {
+        "arguments": [
+            "cc", 
+            "-c", 
+            "-I../include", 
+            "-o", 
+            "producer", 
+            "producer.c"
+        ], 
+        "directory": "/Users/moshohayeb/Documents/code/nng/examples", 
+        "file": "producer.c"
+    }
+]
