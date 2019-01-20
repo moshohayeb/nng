@@ -37,7 +37,7 @@ main(int argc, char **argv)
     nng_socket sock;
 
     signal(SIGALRM, print_stats);
-    ualarm(1000000, 1000000);
+    ualarm(999999, 999999);
 
     if ((rc = nng_pub0_open(&sock)) != 0) {
         panic();
@@ -47,20 +47,20 @@ main(int argc, char **argv)
 
     nng_listener lisener1, lisener2;
 
-    if ((rc = nng_listener_create(&lisener1, sock, "ipc://xxx.ipc")) != 0) {
-        panic();
-    }
-    if ((rc = nng_listener_start(lisener1, 0)) != 0) {
-        panic();
-    }
-
-
-    // if ((rc = nng_listener_create(&lisener2, sock, "tcp://localhost:3999")) != 0) {
+    // if ((rc = nng_listener_create(&lisener1, sock, "ipc://xxx.ipc")) != 0) {
     //     panic();
     // }
-    // if ((rc = nng_listener_start(lisener2, 0)) != 0) {
+    // if ((rc = nng_listener_start(lisener1, 0)) != 0) {
     //     panic();
     // }
+
+
+    if ((rc = nng_listener_create(&lisener2, sock, "tcp://0.0.0.0:3999")) != 0) {
+        panic();
+    }
+    if ((rc = nng_listener_start(lisener2, 0)) != 0) {
+        panic();
+    }
 
 
     int  i = rand();
@@ -71,6 +71,7 @@ main(int argc, char **argv)
         n_msg++;
         // sleep(1);
     }
+
 
 
     return 0;
