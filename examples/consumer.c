@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <time.h>
 #include <stdint.h>
+#include <signal.h>
 
 #include <nng/nng.h>
 #include <nng/protocol/pubsub0/sub.h>
