@@ -37,7 +37,7 @@ main(int argc, char **argv)
     nng_socket sock;
 
     signal(SIGALRM, print_stats);
-    ualarm(1000000, 1000000);
+    ualarm(999999, 999999);
 
     if ((rc = nng_sub0_open(&sock)) != 0) {
         panic();

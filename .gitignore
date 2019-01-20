@@ -7,3 +7,14 @@ wbuild
 .vscode
 .DS_Store
 etc/nng.sublime-workspace
+/GTAGS
+/GPATH
+/GRTAGS
+
+/examples/bus
+/examples/consumer
+/examples/czmq/pub
+/examples/czmq/sub
+/examples/pair
+/examples/producer
+/examples/czmq/compile_commands.json
