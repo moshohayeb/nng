@@ -13,7 +13,7 @@
 // #define URL "ipc://xyz"
 // #define URL "inproc://xyz"
 
-#define URL     "tcp://localhost:3333"
+#define URL     "tcp://localhost:3334"
 #define MSG_LEN 64
 
 uint64_t n_msg;

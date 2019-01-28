@@ -7,10 +7,11 @@ wbuild
 .vscode
 .DS_Store
 etc/nng.sublime-workspace
+
+z
 /GTAGS
 /GPATH
 /GRTAGS
-
 /examples/bus
 /examples/consumer
 /examples/czmq/pub

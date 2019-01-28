@@ -1,14 +1,1 @@
-[
-    {
-        "arguments": [
-            "cc", 
-            "-c", 
-            "-I../include", 
-            "-o", 
-            "pair", 
-            "pair.c"
-        ], 
-        "directory": "/Users/moshohayeb/Documents/code/nng/examples", 
-        "file": "pair.c"
-    }
-]
+[]

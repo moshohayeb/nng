@@ -3,7 +3,7 @@
 LDFLAGS=-L../build/ -lnng -lpthread
 CFLAGS=-I../include
 
-ALL=bus pair producer consumer
+ALL=bus pair producer consumer nngpubsub lean
 
 all: $(ALL)
 
